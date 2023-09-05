@@ -1,0 +1,232 @@
+%-------------------------
+% Resume in Latex
+% Author : Matty
+% Based on: https://github.com/jakegut/resume (which was based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT --------------------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  \vspace{-4pt}
+  \color{gray}
+  \item
+\end{flushright}
+
+\vspace{-7pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Ansh Singh} \\ \vspace{8pt}
+    \small 
+    \faIcon{phone-square-alt}
+    {\underline{7380568128}} $  $
+    \faIcon{github}
+    \href{https://github.com/invinciblevenom}{\underline{github.com/invinciblevenom}} $  $
+    \faIcon{linkedin}
+    \href{https://linkedin.com/in/anshsingh1410}{\underline{linkedin.com/in/anshsingh1410}} $  $
+    \faIcon{envelope}
+    \href{mailto:anshsingh.14.lko@gmail.com}
+    {\underline{anshsingh.14.lko@gmail.com}}
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {JSS Academy of Technical Education, AKTU}{Dec 2020 - Present}
+      {B.Tech Mechanical Engineering}{CGPA: 6.76}
+    \:
+    
+    \resumeSubheading
+      {Manipal Public School}{April 2019 - July 2020}
+      {Senior Secondary School}{Percentage - 80}
+    \:
+
+  \resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+     \textbf{Languages}{: Python, SQL, Kotlin} \\
+     
+     \textbf{Tools}{: Git, GitHub, Jupyter, Google Cloud Platform, PyCharm, IntelliJ IDEA}
+     
+     %\textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     
+     % \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     
+    }}
+ \end{itemize}
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+        \resumeProjectHeading
+        {\textbf{ISM Analysis} $|$ \footnotesize\emph{Python}}{September 2023}
+        \resumeItemListStart
+            \resumeItem{An Interpretive Structural Modelling approach for Building information modelling adoption.}
+        \resumeItemListEnd
+                  
+    \resumeSubHeadingListEnd
+
+% -------------------- EXPERIENCE --------------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+          {\textbf{Open Source Developer}\vspace{8pt} $|$ \footnotesize\emph{GitHub}}{Mar 2018 - Present}
+          \small{Contributing to Open Source Development and working on various Projects}
+
+        \resumeProjectHeading
+          {\textbf{Bharat Intern} $|$ \footnotesize\emph{App Developer Intern}\vspace{8pt}}{July 2023 - Aug 2023}
+          {\small{Developed Android Apps using Kotlin}}
+
+        \resumeProjectHeading
+          {\textbf{Project Founder and Lead Developer} $|$ \footnotesize\emph{GitHub}\vspace{8pt}}{Mar 2020 - Oct 2021}
+          {\small{Development LineageOS and custom Android Kernel development for Oppo Realme 1. Made the base code which was used for different Mediatek based Android devices}}
+
+        \resumeProjectHeading
+          {\textbf{Volunteer Android Developer} $|$ \footnotesize\emph{Meizu Technology Co. Ltd.}\vspace{8pt}}{Aug 2018 - Oct 2018}
+          {\small{Volunteered the development for Flyme 7 by translating and porting the OS for Global Device Section}}
+
+        \resumeProjectHeading
+          {\textbf{Forum Moderator}\vspace{8pt} $|$ \footnotesize\emph{Meizu Technology Co. Ltd.}}{May 2018 - Dec 2019}
+          {\small{Managed device sections for Meizu M5 and Meizu M2 Mini}}
+
+        \resumeProjectHeading
+          {\textbf{Flyme Content Factory Team Member}\vspace{8pt} $|$ \footnotesize\emph{Meizu Technology Co. Ltd.}}{May 2018 - Dec 2019}
+          {\small{Posted articles regarding technology, tutorials, phone and app reviews etc.}}
+          
+    \resumeSubHeadingListEnd 
+
+% -------------------- CERTIFICATES --------------------
+\section{Certificates}
+  \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+          {\textbf{Problem Solving (Basic)} $|$ \footnotesize\emph{HackerRank}\vspace{8pt}}{}
+          {\small{219E90E31634}}
+
+        \resumeProjectHeading
+          {\textbf{Python (Basic)}\vspace{8pt} $|$ \footnotesize\emph{HackerRank}}{}
+          \small{1C30701A358F}
+
+        \resumeProjectHeading
+          {\textbf{Machine Learning (From Basics to Advanced)} $|$ \footnotesize\emph{Udemy}\vspace{8pt}}{}
+          {\small{UC-0de47f37-a932-4af2-a180-ad9c24114013}}
+
+        \resumeProjectHeading
+          {\textbf{SQL Programming Essentials 2023} $|$ \footnotesize\emph{Udemy}\vspace{8pt}}{}
+          {\small{UC-69110d38-6239-41f2-92b8-a936c9e14ec4}}
+
+        \resumeProjectHeading
+          {\textbf{Data Science with Python}\vspace{8pt} $|$ \footnotesize\emph{Simplilearn}}{}
+          {\small{}}
+
+        \resumeProjectHeading
+          {\textbf{Python Programming – A Practical Approach}\vspace{8pt} $|$ \footnotesize\emph{Prutor@IITK}}{}
+          {\small{}}
+
+        \resumeProjectHeading
+          {\textbf{Computer System Security}\vspace{8pt} $|$ \footnotesize\emph{Prutor@IITK}}{}
+          {\small{}}
+          
+    \resumeSubHeadingListEnd 
+
+\end{document}
